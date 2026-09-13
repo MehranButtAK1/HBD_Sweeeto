@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="googlebot" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#100b10">
+<title>A Little Secret 🌸</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#0b080c;color:#fff}body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}.lock{min-height:100vh;display:grid;place-items:center;padding:24px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 35%,#32152b 0,#160c16 42%,#08070a 100%)}.glow{position:absolute;width:420px;height:420px;border-radius:50%;background:#e99bc033;filter:blur(45px);animation:pulse 5s ease-in-out infinite}.card{position:relative;width:min(440px,100%);padding:42px 28px 30px;text-align:center;border:1px solid #ffffff1a;border-radius:28px;background:#ffffff0a;backdrop-filter:blur(18px);box-shadow:0 30px 90px #0008}.flower{font-size:48px;animation:float 3s ease-in-out infinite}.eyebrow{font-size:11px;letter-spacing:.25em;text-transform:uppercase;opacity:.65;margin:18px 0 10px}.title{font-family:Georgia,serif;font-size:38px;line-height:1.05;margin:0}.title em{color:#f0b8d8;font-weight:400}.sub{opacity:.72;line-height:1.7;margin:16px 0 24px}.input{width:100%;padding:15px 17px;border-radius:15px;border:1px solid #ffffff22;background:#0006;color:#fff;outline:0;font-size:16px}.input:focus{border-color:#f0b8d877;box-shadow:0 0 0 4px #f0b8d812}.btn{width:100%;margin-top:12px;padding:15px;border:0;border-radius:15px;background:linear-gradient(135deg,#f3b9d9,#c58bb0);color:#190e17;font-weight:800;font-size:15px;cursor:pointer}.msg{min-height:22px;margin:13px 0 0;font-size:13px;color:#f6c4df}.hint{margin-top:22px;font-size:11px;opacity:.42}.hide{display:none!important}@keyframes pulse{50%{transform:scale(1.18);opacity:.7}}@keyframes float{50%{transform:translateY(-7px) rotate(2deg)}}
+#app{min-height:100vh}
+</style>
+</head>
+<body>
+<div id="lock" class="lock"><div class="glow"></div><div class="card"><div class="flower">🌸</div><div class="eyebrow">a little secret for one special person</div><h1 class="title">For My <em>Sweeto</em> ♡</h1><p class="sub">This little world is protected.<br>Only someone with the secret can open it. 🌻</p><input id="pw" class="input" type="password" autocomplete="off" placeholder="Enter the secret password" aria-label="Secret password"><button id="unlock" class="btn">Unlock our little world ✨</button><div id="msg" class="msg" role="status"></div><div class="hint">Private surprise · 15 · 09 · 2026</div></div></div>
+<div id="app"></div>
+<script>window.__VAULT_CONFIG__={"salt":"dZYSlDeTDZT1EFjstn8V4Q==","manifest":"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","core":{"index.html":"a9eec5848dcc984a4c778856.bin","style.css":"fe6950073d393982a777c5f7.bin","script.js":"d1454ce845900f2a806dfcf7.bin"},"iterations":200000};window.__VAULT_DATA__={};window.__VAULT_READY__=Promise.all(["vault-data-01.js","vault-data-02.js","vault-data-03.js","vault-data-04.js"].map(src=>new Promise((res,rej)=>{const s=document.createElement('script');s.src=src;s.onload=res;s.onerror=rej;document.head.appendChild(s)})));</script>
+<script>
+(()=>{
+'use strict';
+const C=window.__VAULT_CONFIG__; const $=s=>document.querySelector(s);
+const lock=$('#lock'), app=$('#app'), pw=$('#pw'), btn=$('#unlock'), msg=$('#msg');
+let failures=0, cooldownUntil=0, locked=false, key=null, timer=null;
+const b64u=s=>{const bin=atob(s);const a=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);return a};
+async function derive(pass){const km=await crypto.subtle.importKey('raw',new TextEncoder().encode(pass),'PBKDF2',false,['deriveKey']);return crypto.subtle.deriveKey({name:'PBKDF2',salt:b64u(C.salt),iterations:C.iterations,hash:'SHA-256'},km,{name:'AES-GCM',length:256},false,['decrypt']);}
+async function decryptBlob(id,k){const b64=window.__VAULT_DATA__&&window.__VAULT_DATA__[id];if(!b64)throw Error('vault');const u=b64u(b64),nonce=u.slice(0,12),ct=u.slice(12);return new Uint8Array(await crypto.subtle.decrypt({name:'AES-GCM',iv:nonce},k,ct));}
+async function decryptText(id,k){return new TextDecoder().decode(await decryptBlob(id,k));}
+async function getManifest(k){return JSON.parse(await (async()=>{const u=b64u(C.manifest),nonce=u.slice(0,12),ct=u.slice(12);return new TextDecoder().decode(new Uint8Array(await crypto.subtle.decrypt({name:'AES-GCM',iv:nonce},k,ct)));})());}
+let manifest=null, urls=new Map();
+async function secureAsset(name){
+  if(!manifest) throw Error('locked');
+  if(urls.has(name)) return urls.get(name);
+  const f=manifest.files.find(x=>x.logical===name); if(!f) throw Error('missing asset');
+  const data=await decryptBlob(f.id,key); const blob=new Blob([data],{type:f.mime}); const u=URL.createObjectURL(blob); urls.set(name,u); return u;
+}
+window.secureAsset=secureAsset;
+async function hydrateAssets(root){
+  const nodes=[...root.querySelectorAll('[src],[poster]')];
+  for(const el of nodes){
+    for(const attr of ['src','poster']){
+      const v=el.getAttribute(attr); if(v && v.startsWith('assets/')){const n=v.slice(7); try{el.setAttribute(attr,await secureAsset(n))}catch(e){el.removeAttribute(attr)}}
+    }
+  }
+}
+function fail(text){msg.textContent=text;pw.focus()}
+async function unlock(){
+  try{await window.__VAULT_READY__;}catch(e){fail('Could not load protected files. Please refresh. 🌸');return}
+  if(Date.now()<cooldownUntil){fail('Too many attempts. Please wait a little… ⏳');return}
+  const pass=pw.value;
+  if(!pass){fail('Enter the secret password first. 🌸');return}
+  btn.disabled=true; btn.textContent='Unlocking…'; msg.textContent='';
+  try{
+    const k=await derive(pass);
+    // Manifest decryption is the password verification step.
+    const m=await getManifest(k); if(!m||!m.files)throw Error('bad password');
+    key=k; manifest=m;
+    const html=await decryptText(C.core['index.html'],k);
+    const css=await decryptText(C.core['style.css'],k);
+    const js=await decryptText(C.core['script.js'],k);
+    const doc=new DOMParser().parseFromString(html,'text/html');
+    document.title=doc.title.textContent;
+    app.innerHTML=doc.body.innerHTML;
+    const st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
+    await hydrateAssets(app);
+    const sc=document.createElement('script');sc.textContent=js;app.appendChild(sc);
+    lock.classList.add('hide');
+    pw.value=''; failures=0;
+    // Auto-lock after 30 minutes of inactivity/visibility.
+    clearTimeout(timer); timer=setTimeout(()=>location.reload(),30*60*1000);
+  }catch(e){
+    failures++; if(failures>=5){cooldownUntil=Date.now()+30_000;failures=0;fail('Too many incorrect attempts. Try again in 30 seconds. 🔒')} else fail('That password isn’t right. Try again, Sweeto… 🌸');
+  }finally{btn.disabled=false;btn.textContent='Unlock our little world ✨'}
+}
+btn.addEventListener('click',unlock);pw.addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+})();
+</script>
+</body></html>
